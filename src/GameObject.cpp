@@ -4,7 +4,7 @@ sf::Sprite GameObject::getSprite() {
     return sprite;
 }
 
-sf::Vector2f GameObject::getPosition() {
+sf::Vector2f GameObject::getPosition() const {
     return sf::Vector2f(coordX, coordY);
 }
 

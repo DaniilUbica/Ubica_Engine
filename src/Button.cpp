@@ -59,6 +59,10 @@ void Button::setActive(bool a) {
     isActive = a;
 }
 
+void Button::setText(std::string& str) {
+    this->text.setString(str);
+}
+
 bool Button::getActive() {
     return isActive;
 }

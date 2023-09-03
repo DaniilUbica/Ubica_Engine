@@ -16,5 +16,5 @@ public:
 	Animation(sf::Texture& t, int x, int y,
 		int width, int height, int framesCount, float animSpeed, int step);
 
-	sf::Sprite Tick(bool rotate);
+	sf::Sprite Tick(float time, bool rotate);
 };

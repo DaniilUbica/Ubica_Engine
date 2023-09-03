@@ -23,12 +23,11 @@ public:
     Button(float x, float y, float w, float h, sf::Vector3i border_color, sf::Vector3i button_color, sf::Vector3i text_color, sf::Text text);
 
     void Update(sf::RenderWindow& window);
-
     bool checkClick(sf::RenderWindow& window, sf::Event& event);
-
     void drawButton(sf::RenderWindow& window);
 
     void setActive(bool a);
+    void setText(std::string& str);
 
     bool getActive();
 };

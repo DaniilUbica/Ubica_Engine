@@ -17,8 +17,8 @@ Animation::Animation(sf::Texture& t, int x, int y, int width, int height, int fr
 	}
 }
 
-sf::Sprite Animation::Tick(bool rotate) {
-	currentFrame += animSpeed;
+sf::Sprite Animation::Tick(float time, bool rotate) {
+	currentFrame += animSpeed * time;
 
 	if (currentFrame > float( frames.size()) - 0.01) {
 		currentFrame -= frames.size();
